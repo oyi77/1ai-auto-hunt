@@ -79,3 +79,4 @@ branch = true
 [tool.coverage.report]
 fail_under = 80
 show_missing = true
+    "fastmcp>=0.4,<1",
