@@ -302,7 +302,7 @@ class DomainScanner:
 
     async def _filter_available(self, domains: list[str]) -> list[str]:
         """Return only domains whose RDAP lookup indicates *not found*."""
-        rdap_base = self._rdap_servers.get(domains[0].split(".")[-1] if domains else "")
+        rdap_base = self._rdap_servers.get("." + domains[0].split(".")[-1] if domains else "")
         if not rdap_base:
             # Try to resolve via bootstrap
             rdap_base = await self._resolve_rdap_server(domains[0] if domains else "")
