@@ -29,6 +29,7 @@ dependencies = [
     "python-dotenv>=1.0,<2",
     "aiofiles>=24.1,<25",
     "aiohttp>=3.9,<4",
+    "fastmcp>=0.4,<1",
 ]
 
 [project.optional-dependencies]
@@ -79,4 +80,3 @@ branch = true
 [tool.coverage.report]
 fail_under = 80
 show_missing = true
-    "fastmcp>=0.4,<1",
